@@ -28,7 +28,7 @@ public class Employee {
     }
 
     public String getSocialSecurity() {
-        return socialSecurity
+        return socialSecurity;
     }
 
     // Setters
