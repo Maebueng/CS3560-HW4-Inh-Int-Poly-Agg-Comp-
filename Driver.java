@@ -18,22 +18,34 @@ public class Driver {
             */
 
         // Question 2
-        Payable[] payables = new Payable[4];
+        /*Payable[] payables = new Payable[4];
 
-        payables[0] = new Freelancer("Johnny", "Silverhand", 20, 77);
-        payables[1] = new Freelancer("Garcian", "Smith", 51, 7);
-        payables[2] = new VendorInvoice("Random Play", "12345", 1000.00);
-        payables[3] = new VendorInvoice("Narumi Detective Office", "67890", 1500.00);
+        *payables[0] = new Freelancer("Johnny", "Silverhand", 20, 77);
+        *payables[1] = new Freelancer("Garcian", "Smith", 51, 7);
+        *payables[2] = new VendorInvoice("Random Play", "12345", 1000.00);
+        *payables[3] = new VendorInvoice("Narumi Detective Office", "67890", 1500.00);
 
-        double totalPayout = 0;
+        *double totalPayout = 0;
 
-        for (int i = 0; i < payables.length; i++) {
-            // prints name and amount due
-            System.out.println(payables[i]);
-            System.out.println("Payee: " + payables[i].getPayeeName() + " | Payment due: $" + payables[i].calculatePayment());
-            totalPayout += payables[i].calculatePayment();
+        *for (int i = 0; i < payables.length; i++) {
+        *    // prints name and amount due
+        *    System.out.println(payables[i]);
+        *    System.out.println("Payee: " + payables[i].getPayeeName() + " | Payment due: $" + payables[i].calculatePayment());
+        *    totalPayout += payables[i].calculatePayment();
+        *}
+
+        *System.out.println("Total Payout: $" + totalPayout);
+        */
+
+        // Question 3
+        Ship[] ships = new Ship[3];
+
+        ships[0] = new Ship("Pequod", "1840");
+        ships[1] = new CruiseShip("Titanic", "1912", 3547);
+        ships[2] = new CargoShip("Generic Cargo Ship", "2001", 25);
+
+        for (int i = 0; i < ships.length; i++) {
+            System.out.println(ships[i]);
         }
-
-        System.out.println("Total Payout: $" + totalPayout);
     }
 }
