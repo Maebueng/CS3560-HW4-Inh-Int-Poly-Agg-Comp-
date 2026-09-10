@@ -23,4 +23,10 @@ public class SalariedEmployee extends Employee {
         this.weeklySalary = weeklySalary;
     }
 
+    @Override 
+    public String toString() {
+        // super.toString to grab already written variables from superclass
+        return super.toString() + " | Weekly Salary: $" + weeklySalary;
+    }
+
 }

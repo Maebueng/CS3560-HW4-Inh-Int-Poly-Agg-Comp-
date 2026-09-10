@@ -3,7 +3,7 @@ public class HourlyEmployee extends Employee {
     private double hoursWorked;
 
     // no arguments
-    public HourlyEmployee {
+    public HourlyEmployee() {
         super();
         wage = 0;
         hoursWorked = 0;
@@ -11,7 +11,7 @@ public class HourlyEmployee extends Employee {
 
     // parametized
     public HourlyEmployee(String firstName, String lastName, String socialSecurity, double wage, double hoursWorked) {
-        super(firstName, lastName, socialSecurityNumber);
+        super(firstName, lastName, socialSecurity);
         this.wage = wage;
         this.hoursWorked = hoursWorked;
     }
@@ -32,6 +32,12 @@ public class HourlyEmployee extends Employee {
 
     public void setHoursWorked(double hoursWorked) {
         this.hoursWorked = hoursWorked;
+    }
+
+    @Override 
+    public String toString() {
+        // super.toString to grab already written variables from superclass
+        return super.toString() + " | Wage: $" + wage + " | Hours: " + hoursWorked; 
     }
 
 

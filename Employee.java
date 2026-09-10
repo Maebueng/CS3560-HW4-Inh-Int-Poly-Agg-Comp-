@@ -44,6 +44,11 @@ public class Employee {
         this.socialSecurity = socialSecurity;
     }
 
+    @Override
+    public String toString() {
+        return "Employee: " + firstName + " " + lastName + " | Social Security Number: " + socialSecurity;
+    }
+
 
 }
 

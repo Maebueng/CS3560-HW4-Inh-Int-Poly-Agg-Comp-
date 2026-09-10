@@ -2,7 +2,7 @@ public class BaseEmployee extends Employee {
     private double baseSalary;
 
     // no arguments
-    public BaseEmployee {
+    public BaseEmployee() {
         super();
         this.baseSalary = 0;
     }
@@ -21,5 +21,11 @@ public class BaseEmployee extends Employee {
     // setters
     public void setBaseSalary(double baseSalary) {
         this.baseSalary = baseSalary;
+    }
+
+    @Override 
+    public String toString() {
+        // super.toString to grab already written variables from superclass
+        return super.toString() + " | Base Salary: $" + baseSalary;
     }
 }

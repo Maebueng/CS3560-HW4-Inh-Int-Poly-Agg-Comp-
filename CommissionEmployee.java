@@ -34,5 +34,11 @@ public class CommissionEmployee extends Employee {
     public void setGrossSales(double grossSales) {
         this.grossSales = grossSales;
     }
+
+    @Override 
+    public String toString() {
+        // super.toString to grab already written variables from superclass
+        return super.toString() + " | Commission Rate: " + commissionRate + " | Gross Sales: $" + grossSales;
+    }
     
 }

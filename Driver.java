@@ -1,4 +1,4 @@
-public class Main {
+public class Driver {
     public static void main(String[] args) {
         // Stores employees in array for later access
         Employee[] employees = new Employee[7];
@@ -10,5 +10,9 @@ public class Main {
         employees[4] = new SalariedEmployee("Renwa", "Chanel", "555-55-5555", 1700);
         employees[5] = new BaseEmployee("Mike", "Davenport", "666-66-6666", 95000);
         employees[6] = new CommissionEmployee("Mahnaz", "Vaziri", "777-77-7777", 0.22, 40000);
+
+        for (int i = 0; i < employees.length; i++) {
+            System.out.println(employees[i]);
+        }
     }
 }
