@@ -27,6 +27,7 @@ public class Driver {
 
         double totalPayout = 0;
 
+<<<<<<< Updated upstream
         for (int i = 0; i < payables.length; i++) {
             // prints name and amount due
             System.out.println(payables[i]);
@@ -35,5 +36,42 @@ public class Driver {
         }
 
         System.out.println("Total Payout: $" + totalPayout);
+=======
+        *for (int i = 0; i < payables.length; i++) {
+        *    // prints name and amount due
+        *    System.out.println(payables[i]);
+        *    System.out.println("Payee: " + payables[i].getPayeeName() + " | Payment due: $" + payables[i].calculatePayment());
+        *    totalPayout += payables[i].calculatePayment();
+        *}
+
+        *System.out.println("Total Payout: $" + totalPayout);
+        */
+
+        // Question 3
+        /*Ship[] ships = new Ship[3];
+
+        ships[0] = new Ship("Pequod", "1840");
+        ships[1] = new CruiseShip("Titanic", "1912", 3547);
+        ships[2] = new CargoShip("Generic Cargo Ship", "2001", 25);
+
+        for (int i = 0; i < ships.length; i++) {
+            System.out.println(ships[i]);
+        }
+        */
+
+        // Question 4
+        Course[] courses = new Course[2];
+
+        courses[0] = new Course("CS 3560",
+                        new Instructor("Nima", "Davarpanah", "3-2636"),
+                        new Textbook("Clean Code", "Robert C. Martin", "Addison-Wesley Professional"));
+        courses[1] = new Course("Whale Hunting 101",
+                        new Instructor("Captain", "Ahab", "10-1851"),
+                        new Textbook("Moby Dick", "Herman Melville", "Richard Bentley"));
+        
+        for (int i = 0; i < courses.length; i++) {
+            System.out.println(courses[i]);
+        }
+>>>>>>> Stashed changes
     }
 }
