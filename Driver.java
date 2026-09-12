@@ -48,7 +48,7 @@ public class Driver {
         }*/
 
         // Question 4
-        Course[] courses = new Course[2];
+        /*Course[] courses = new Course[2];
 
         courses[0] = new Course("CS 3560",
                         new Instructor("Nima", "Davarpanah", "3-2636"),
@@ -59,6 +59,65 @@ public class Driver {
         
         for (int i = 0; i < courses.length; i++) {
             System.out.println(courses[i]);
-        }
+        }*/
+
+        // Question 5
+
+        // root folder
+        Folder phpDemo1 = new Folder("php_demo1");
+
+        // source file
+        Folder sourceFiles = new Folder("Sources Files");
+
+        // children of source file
+            Folder phalcon = new Folder(".phalcon");
+            Folder app = new Folder("app");
+                Folder config = new Folder("config");
+                Folder controllers = new Folder("controllers");
+                Folder library = new Folder("library");
+                Folder migrations = new Folder("migartions");
+                Folder models = new Folder("models");
+                Folder views = new Folder("views");
+
+                app.addFolder(config);
+                app.addFolder(controllers);
+                app.addFolder(library);
+                app.addFolder(migrations);
+                app.addFoldeer(models);
+                app.addFolder(views);
+
+            Folder cache = new Folder("cache");
+            Folder publicFolder = new Folder("public");
+                File htAccess = new File(".htaccess");
+                File htRouter = new File(".htrouter.php");
+                File indexHtml = new File("index.html");
+
+                publicFolder.addFile(htAccess);
+                publicFolder.addFile(htRouter);
+                publicFolder.addFile(indexHtml);
+
+            sourceFiles.addFolder(phalcon);
+            sourceFiles.addFolder(app);
+            sourceFiles.addFolder(cache);
+            sourceFiles.addFolder(publicFolder);
+        
+        Folder includePath = new Folder("Include Path");
+        Folder remoteFiles = new Folder("Remote Files");
+
+        phpDemo1.addFolder(sourceFiles);
+        phpDemo1.addFolder(includePath);
+        phpDemo1.addFolder(remoteFiles);
+
+        // 5.1 Print out all the folders and files
+        phpDemo1.print();
+
+        // 5.2 Delete folder 'app' and print out file structure
+        phpDemo1.removeFolder("app");
+        phpDemo1.print();
+
+        // 5.3 Delte folder 'public' and print out file structure
+        phpDemo1.removeFolder("public");
+        phpDemo1.print();
+
     }
 }
