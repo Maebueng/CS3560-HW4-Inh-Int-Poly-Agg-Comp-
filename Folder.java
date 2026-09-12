@@ -60,7 +60,7 @@ public class Folder {
         }
 
         for (File file : files) {
-            System.out.println(" | File: " + file.getFileName());
+            System.out.println("   File: " + file.getFileName());
         }
     }
 
